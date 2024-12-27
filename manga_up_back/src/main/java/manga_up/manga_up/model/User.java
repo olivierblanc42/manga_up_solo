@@ -34,8 +34,8 @@ public class User {
     private LocalDate createdAt;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "Id_adress", nullable = false)
-    private Adress idAdress;
+    @JoinColumn(name = "Id_addresses", nullable = false)
+    private Address idAddresses;
 
     public Integer getId() {
         return id;
@@ -101,12 +101,12 @@ public class User {
         this.createdAt = createdAt;
     }
 
-    public Adress getIdAdress() {
-        return idAdress;
+    public Address getIdAddresses() {
+        return idAddresses;
     }
 
-    public void setIdAdress(Adress idAdress) {
-        this.idAdress = idAdress;
+    public void setIdAddresses(Address idAddresses) {
+        this.idAddresses = idAddresses;
     }
 
 }

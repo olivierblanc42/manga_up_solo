@@ -5,11 +5,11 @@ import jakarta.persistence.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "adresses")
-public class Adress {
+@Table(name = "addresses")
+public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id_adress", nullable = false)
+    @Column(name = "Id_addresses", nullable = false)
     private Integer id;
 
     @Column(name = "line1", nullable = false, length = 50)
